@@ -198,10 +198,6 @@ public class ChopUtil {
                 maxNumTreeBlocks
         );
 
-        if (supportedBlocks.size() >= maxNumTreeBlocks) {
-            TreeChopMod.LOGGER.warn(String.format("Max tree size reached: %d >= %d blocks (not including leaves)", supportedBlocks.size(), maxNumTreeBlocks));
-        }
-
         inHasLeaves.set(overrideHasLeaves.get() ? valueToOverrideHasLeaves : trueHasLeaves.get());
 
         return supportedBlocks;
